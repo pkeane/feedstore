@@ -31,7 +31,9 @@ class MainHandler(webapp.RequestHandler):
       passwd = 'xxx123'
       feed = atomlib.Atom.retrieve(url,user,passwd)
       out = """
-      <html><head><title>tweets</title>
+      <html><head>
+      <link rel="shortcut icon" href="/www/images/favicon.ico">
+      <title>Feed-Store</title>
       <style type="text/css">
       body {
       font-size: 10px;
